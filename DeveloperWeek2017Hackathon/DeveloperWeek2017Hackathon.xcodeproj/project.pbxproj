@@ -15,6 +15,7 @@
 		A74A37F51EF82C89008142C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74A37F31EF82C89008142C2 /* LaunchScreen.storyboard */; };
 		A74A38001EF82C89008142C2 /* DeveloperWeek2017HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A37FF1EF82C89008142C2 /* DeveloperWeek2017HackathonTests.swift */; };
 		A74A380B1EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A380A1EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.swift */; };
+		A74A38191EF87AE9008142C2 /* ZangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A38181EF87AE9008142C2 /* ZangManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A74A38061EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeveloperWeek2017HackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74A380A1EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperWeek2017HackathonUITests.swift; sourceTree = "<group>"; };
 		A74A380C1EF82C89008142C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A74A38181EF87AE9008142C2 /* ZangManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZangManager.swift; path = Managers/ZangManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A74A37E71EF82C89008142C2 /* AppDelegate.swift */,
+				A74A38181EF87AE9008142C2 /* ZangManager.swift */,
 				A74A37E91EF82C89008142C2 /* ViewController.swift */,
 				A74A37EB1EF82C89008142C2 /* Main.storyboard */,
 				A74A37F11EF82C89008142C2 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				A74A37EA1EF82C89008142C2 /* ViewController.swift in Sources */,
 				A74A37F01EF82C89008142C2 /* DeveloperWeek2017Hackathon.xcdatamodeld in Sources */,
 				A74A37E81EF82C89008142C2 /* AppDelegate.swift in Sources */,
+				A74A38191EF87AE9008142C2 /* ZangManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

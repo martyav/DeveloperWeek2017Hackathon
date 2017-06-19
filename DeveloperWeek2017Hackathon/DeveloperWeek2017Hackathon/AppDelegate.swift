@@ -13,7 +13,15 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var wowzaAPIKey = "eBXQ1hVAdr6t75XROdDVS3vgRo3fLtia6skoQ4zIazjaAMwwVCY09aXGvnor3503"
+    var wowzaAccesskey = "bAfc4CFI9UFNfILr4hadTPThQynm3GPIfq6K0VJ3aTehHAmtNQueDYpZFsnr334e"
+    
+    var voiceRequestURL = "http://www.zang.io/ivr/welcome/call"
+    var smsRequestURL = "http://www.zang.io/ivr/welcome/sms"
+    
+    var zangAccountSID = "AC65889084794080b448164c34ac90b341"
+    var zangAuthToken = "975d3bd90b834f9aaa48d45ad4804c78"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
