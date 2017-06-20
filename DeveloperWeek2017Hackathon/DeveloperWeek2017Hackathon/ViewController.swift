@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var messageField: UITextView!
     @IBOutlet weak var sendButton: UIButton!
@@ -30,4 +31,3 @@ extension ViewController: UITextFieldDelegate {
         
     }
 }
-

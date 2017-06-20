@@ -427,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P29FUG645U;
 				INFOPLIST_FILE = DeveloperWeek2017Hackathon/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.anama.developer.DeveloperWeek2017Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P29FUG645U;
 				INFOPLIST_FILE = DeveloperWeek2017Hackathon/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.anama.developer.DeveloperWeek2017Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,7 +456,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = P29FUG645U;
 				INFOPLIST_FILE = DeveloperWeek2017HackathonTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.anama.developer.DeveloperWeek2017HackathonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,7 +472,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = P29FUG645U;
 				INFOPLIST_FILE = DeveloperWeek2017HackathonTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.anama.developer.DeveloperWeek2017HackathonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,7 +487,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = P29FUG645U;
 				INFOPLIST_FILE = DeveloperWeek2017HackathonUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.anama.developer.DeveloperWeek2017HackathonUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,7 +502,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = P29FUG645U;
 				INFOPLIST_FILE = DeveloperWeek2017HackathonUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.anama.developer.DeveloperWeek2017HackathonUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

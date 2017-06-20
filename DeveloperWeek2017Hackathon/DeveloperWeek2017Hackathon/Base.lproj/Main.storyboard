@@ -63,6 +63,7 @@
                     <connections>
                         <outlet property="messageField" destination="mu2-UC-A6O" id="eQe-Uq-oL0"/>
                         <outlet property="sendButton" destination="hn0-bO-hGw" id="SRv-cu-Gbj"/>
+                        <outlet property="spinner" destination="Wht-5T-iP5" id="Mcv-Zs-rLt"/>
                         <outlet property="webView" destination="hgr-DM-iB6" id="A8u-vV-RhR"/>
                     </connections>
                 </viewController>
