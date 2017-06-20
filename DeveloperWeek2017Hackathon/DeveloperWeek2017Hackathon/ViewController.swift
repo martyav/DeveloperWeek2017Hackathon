@@ -11,11 +11,14 @@ import MediaPlayer
 import AVKit
 import Foundation
 
+var phoneNumber = "US's Nine Digit Phone Number Here"
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var streamPlayerView: UIView!
     var moviePlayer:AVPlayerViewController!
     var streamingPlaybackURL: String!
+    
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var webView: UIWebView!
@@ -33,9 +36,6 @@ class ViewController: UIViewController {
         moviePlayer.view.frame = self.streamPlayerView.bounds
         self.streamPlayerView.addSubview(moviePlayer.view)
         self.moviePlayer.player!.play()
-        
-        //publish a stream
-        //        self.publishStream(new: false)
 
     }
     
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     
     @IBAction func sendSMSButtonPressed(_ sender: UIButton) {
         
-        ZangManager.shared.sendSMS(toNumber: "9173795525", bodyMessage: "New live stream available on zamhack://zang")
+        ZangManager.shared.sendSMS(toNumber: phoneNumber, bodyMessage: "New live stream available on zamhack://zang")
     }
     
     
