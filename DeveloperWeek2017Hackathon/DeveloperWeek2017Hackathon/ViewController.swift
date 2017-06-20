@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         let player = AVPlayer(url: url as URL)
         moviePlayer = AVPlayerViewController()
         moviePlayer.player = player
-        moviePlayer.view.frame = self.streamPlayerView.frame
+        moviePlayer.view.frame = self.streamPlayerView.bounds
         self.streamPlayerView.addSubview(moviePlayer.view)
         self.moviePlayer.player!.play()
         
