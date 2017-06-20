@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+var receivedStream = false
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -41,6 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+//        if true {
+//            ZangManager.shared.sendSMS(toNumber: "9173795525", bodyMessage: "New live stream available on zamhack://zang")
+//        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -52,7 +57,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
-
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        receivedStream = true
+        print(userInfo)
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
