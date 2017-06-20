@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBAction func sendSMSButtonPressed(_ sender: UIButton) {
+        
+        ZangManager.shared.sendSMS(toNumber: "9173795525", bodyMessage: "New live stream available on zamhack://zang")
+    }
     
 }
 
