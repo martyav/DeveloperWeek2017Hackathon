@@ -73,7 +73,9 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func getAllAvailableNumbers(country: String = "US", type: String = "Local"){
+    func getAllAvailableNumbers(country: String = "US", type: String = "Local", callback: @escaping (([Phone]?) -> Void)) {
+        //var arrayPhones = [Phone]()
+        
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
             "cache-control": "no-cache",
@@ -93,6 +95,11 @@ class ZangManager {
             } else {
                 let httpResponse = response as? HTTPURLResponse
                 print(httpResponse)
+                guard let validData = data else { return }
+                
+                if let validPhones = PhoneFactory.manager.getAvailablePhoneNumberData(from: validData) {
+                    callback(validPhones)
+                }
             }
         })
         
