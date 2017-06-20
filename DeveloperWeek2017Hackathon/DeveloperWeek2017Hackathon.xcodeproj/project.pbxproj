@@ -16,6 +16,10 @@
 		A74A38001EF82C89008142C2 /* DeveloperWeek2017HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A37FF1EF82C89008142C2 /* DeveloperWeek2017HackathonTests.swift */; };
 		A74A380B1EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A380A1EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.swift */; };
 		A74A38191EF87AE9008142C2 /* ZangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A38181EF87AE9008142C2 /* ZangManager.swift */; };
+		A77C83DE1EF9495A00CB2F2C /* LiveStreamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83DC1EF9495A00CB2F2C /* LiveStreamFactory.swift */; };
+		A77C83DF1EF9495A00CB2F2C /* WowzaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83DD1EF9495A00CB2F2C /* WowzaManager.swift */; };
+		A77C83E31EF9498A00CB2F2C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83E11EF9498A00CB2F2C /* Phone.swift */; };
+		A77C83E41EF9498A00CB2F2C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83E21EF9498A00CB2F2C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		A74A380A1EF82C89008142C2 /* DeveloperWeek2017HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperWeek2017HackathonUITests.swift; sourceTree = "<group>"; };
 		A74A380C1EF82C89008142C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74A38181EF87AE9008142C2 /* ZangManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZangManager.swift; path = Managers/ZangManager.swift; sourceTree = "<group>"; };
+		A77C83DC1EF9495A00CB2F2C /* LiveStreamFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveStreamFactory.swift; path = Managers/LiveStreamFactory.swift; sourceTree = "<group>"; };
+		A77C83DD1EF9495A00CB2F2C /* WowzaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WowzaManager.swift; path = Managers/WowzaManager.swift; sourceTree = "<group>"; };
+		A77C83E11EF9498A00CB2F2C /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Phone.swift; path = Models/Phone.swift; sourceTree = "<group>"; };
+		A77C83E21EF9498A00CB2F2C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				A74A37E71EF82C89008142C2 /* AppDelegate.swift */,
-				A74A38181EF87AE9008142C2 /* ZangManager.swift */,
+				A77C83E51EF9499600CB2F2C /* Models */,
+				A77C83E01EF9496100CB2F2C /* Managers */,
 				A74A37E91EF82C89008142C2 /* ViewController.swift */,
 				A74A37EB1EF82C89008142C2 /* Main.storyboard */,
 				A74A37F11EF82C89008142C2 /* Assets.xcassets */,
@@ -129,6 +138,25 @@
 				A74A380C1EF82C89008142C2 /* Info.plist */,
 			);
 			path = DeveloperWeek2017HackathonUITests;
+			sourceTree = "<group>";
+		};
+		A77C83E01EF9496100CB2F2C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A77C83DC1EF9495A00CB2F2C /* LiveStreamFactory.swift */,
+				A77C83DD1EF9495A00CB2F2C /* WowzaManager.swift */,
+				A74A38181EF87AE9008142C2 /* ZangManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		A77C83E51EF9499600CB2F2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A77C83E11EF9498A00CB2F2C /* Phone.swift */,
+				A77C83E21EF9498A00CB2F2C /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +298,11 @@
 			files = (
 				A74A37EA1EF82C89008142C2 /* ViewController.swift in Sources */,
 				A74A37F01EF82C89008142C2 /* DeveloperWeek2017Hackathon.xcdatamodeld in Sources */,
+				A77C83DF1EF9495A00CB2F2C /* WowzaManager.swift in Sources */,
 				A74A37E81EF82C89008142C2 /* AppDelegate.swift in Sources */,
+				A77C83E41EF9498A00CB2F2C /* User.swift in Sources */,
+				A77C83E31EF9498A00CB2F2C /* Phone.swift in Sources */,
+				A77C83DE1EF9495A00CB2F2C /* LiveStreamFactory.swift in Sources */,
 				A74A38191EF87AE9008142C2 /* ZangManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
