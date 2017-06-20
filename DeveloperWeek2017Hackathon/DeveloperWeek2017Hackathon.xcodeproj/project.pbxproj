@@ -20,6 +20,7 @@
 		A77C83DF1EF9495A00CB2F2C /* WowzaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83DD1EF9495A00CB2F2C /* WowzaManager.swift */; };
 		A77C83E31EF9498A00CB2F2C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83E11EF9498A00CB2F2C /* Phone.swift */; };
 		A77C83E41EF9498A00CB2F2C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83E21EF9498A00CB2F2C /* User.swift */; };
+		A77C83E71EF9632600CB2F2C /* PhoneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77C83E61EF9632600CB2F2C /* PhoneFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A77C83DD1EF9495A00CB2F2C /* WowzaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WowzaManager.swift; path = Managers/WowzaManager.swift; sourceTree = "<group>"; };
 		A77C83E11EF9498A00CB2F2C /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Phone.swift; path = Models/Phone.swift; sourceTree = "<group>"; };
 		A77C83E21EF9498A00CB2F2C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		A77C83E61EF9632600CB2F2C /* PhoneFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		A77C83E01EF9496100CB2F2C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A77C83E61EF9632600CB2F2C /* PhoneFactory.swift */,
 				A77C83DC1EF9495A00CB2F2C /* LiveStreamFactory.swift */,
 				A77C83DD1EF9495A00CB2F2C /* WowzaManager.swift */,
 				A74A38181EF87AE9008142C2 /* ZangManager.swift */,
@@ -302,6 +305,7 @@
 				A74A37E81EF82C89008142C2 /* AppDelegate.swift in Sources */,
 				A77C83E41EF9498A00CB2F2C /* User.swift in Sources */,
 				A77C83E31EF9498A00CB2F2C /* Phone.swift in Sources */,
+				A77C83E71EF9632600CB2F2C /* PhoneFactory.swift in Sources */,
 				A77C83DE1EF9495A00CB2F2C /* LiveStreamFactory.swift in Sources */,
 				A74A38191EF87AE9008142C2 /* ZangManager.swift in Sources */,
 			);
