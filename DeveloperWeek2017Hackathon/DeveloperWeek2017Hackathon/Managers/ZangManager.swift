@@ -10,6 +10,9 @@ import Foundation
 
 class ZangManager {
     
+    static let shared = ZangManager()
+    private init () {}
+    
     private let accountSid = "AC65889084794080b448164c34ac90b341"
     private let authToken = "975d3bd90b834f9aaa48d45ad4804c78"
     
