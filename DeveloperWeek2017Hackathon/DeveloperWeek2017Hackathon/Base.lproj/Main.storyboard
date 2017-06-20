@@ -51,7 +51,7 @@
                                     <action selector="sendSMSButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFF-XS-9c3"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wht-5T-iP5">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="NO" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Wht-5T-iP5">
                                 <rect key="frame" x="169" y="181" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="0.0" green="0.62443752880000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
