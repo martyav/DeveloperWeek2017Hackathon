@@ -42,14 +42,14 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func makeACall(fromNumber: String, toNumber: String, urlString: String ) {
+    func makeACall(fromNumber: String = "9179001789", toNumber: String = "9173629459", urlString: String ) {
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
             "cache-control": "no-cache",
             "postman-token": "7b7a6abc-bc06-8089-270e-24cd17979c19"
         ]
         
-        let validURLString = urlString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        guard let validURLString = urlString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
         
 //        let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/Calls.json?To=%2019174760615&From=%2019173795525&Url=http%3A%2F%2Fzang.io%2Fivr%2Fwelcome%2Fcall")! as URL,
 //                                        cachePolicy: .useProtocolCachePolicy,
@@ -70,6 +70,7 @@ class ZangManager {
                 print(httpResponse)
             }
         })
+        dataTask.resume()
     }
     
     func getAllAvailableNumbers(country: String = "US", type: String = "Local"){
@@ -98,7 +99,7 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func addNumber(number: String, areaCode: String) {
+    func addNumber(number: String = "9892560912", areaCode: String = "1") {
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
             "cache-control": "no-cache",
@@ -127,16 +128,16 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func sendSMS(fromNumber: String = "19179001789", toNumber:String = "19173629459", bodyMessage: String) {
+    func sendSMS(fromNumber: String = "9179001789", toNumber:String = "9173629459", bodyMessage: String) {
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
             "cache-control": "no-cache",
             "postman-token": "27108618-40d3-534f-cff9-73b6f7b0c60b"
         ]
         
-        let validBodyString = bodyMessage.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        guard let validBodyString = bodyMessage.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/SMS/Messages?To=%20\(toNumber)&From=%20\(fromNumber)&Body=\(validBodyString)")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/SMS/Messages?To=%201\(toNumber)&From=%201\(fromNumber)&Body=\(validBodyString)")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "POST"
@@ -151,7 +152,6 @@ class ZangManager {
                 print(httpResponse)
             }
         })
-        
         dataTask.resume()
     }
 }
