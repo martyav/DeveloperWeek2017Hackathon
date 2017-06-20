@@ -73,8 +73,8 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func getAllAvailableNumbers(country: String = "US", type: String = "Local") -> [Phone]? {
-        var arrayPhones = [Phone]()
+    func getAllAvailableNumbers(country: String = "US", type: String = "Local", callback: @escaping (([Phone]?) -> Void)) {
+        //var arrayPhones = [Phone]()
         
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
@@ -98,16 +98,13 @@ class ZangManager {
                 guard let validData = data else { return }
                 
                 if let validPhones = PhoneFactory.manager.getAvailablePhoneNumberData(from: validData) {
-                    arrayPhones = validPhones
+                    callback(validPhones)
                 }
             }
         })
         
         dataTask.resume()
-        //dump(arrayPhones) //nothing
-        return arrayPhones
     }
-
     
     func addNumber(number: String = "9892560912", areaCode: String = "1") {
         let headers = [
