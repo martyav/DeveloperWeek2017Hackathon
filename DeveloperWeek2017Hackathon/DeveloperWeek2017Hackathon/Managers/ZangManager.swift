@@ -23,9 +23,6 @@ class ZangManager {
             "postman-token": "385aaea1-c0e4-e7d9-0501-556512f00b33"
         ]
         
-//        let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/Notifications/NO078890845a1fb731856b496cbae9a366.json")! as URL,
-//                                          cachePolicy: .useProtocolCachePolicy,
-//                                          timeoutInterval: 10.0)
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/\(accountSid)/Notifications/\(notificationSid).json")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
@@ -45,7 +42,7 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func makeACall(fromNumber: String = "9179001789", toNumber: String = "9173629459", urlString: String ) {
+    func makeACall(fromNumber: String = "9179001789", toNumber: String, urlString: String ) {
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
             "cache-control": "no-cache",
@@ -54,9 +51,6 @@ class ZangManager {
         
         guard let validURLString = urlString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
         
-//        let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/Calls.json?To=%2019174760615&From=%2019173795525&Url=http%3A%2F%2Fzang.io%2Fivr%2Fwelcome%2Fcall")! as URL,
-//                                        cachePolicy: .useProtocolCachePolicy,
-//                                          timeoutInterval: 10.0)
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/\(accountSid)/Calls.json?To=%201\(toNumber)&From=%201\(fromNumber)&Url=\(validURLString)")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
@@ -116,10 +110,6 @@ class ZangManager {
             "postman-token": "f368722a-69f6-38f6-d948-12587aca1341"
         ]
         
-        //let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/IncomingPhoneNumbers.json?AreaCode=1&PhoneNumber=9892560912")! as URL,
-        //cachePolicy: .useProtocolCachePolicy,
-        //timeoutInterval: 10.0)
-        
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.zang.io/v2/Accounts/AC65889084794080b448164c34ac90b341/IncomingPhoneNumbers.json?AreaCode=\(areaCode)&PhoneNumber=\(number)")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
@@ -138,7 +128,7 @@ class ZangManager {
         dataTask.resume()
     }
     
-    func sendSMS(fromNumber: String = "9179001789", toNumber:String = "9173629459", bodyMessage: String) {
+    func sendSMS(fromNumber: String = "9179001789", toNumber:String, bodyMessage: String) {
         let headers = [
             "authorization": "Basic QUM2NTg4OTA4NDc5NDA4MGI0NDgxNjRjMzRhYzkwYjM0MTo5NzVkM2JkOTBiODM0ZjlhYWE0OGQ0NWFkNDgwNGM3OA==",
             "cache-control": "no-cache",
