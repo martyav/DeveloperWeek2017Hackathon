@@ -6,4 +6,4 @@ ZAMHack won second place in DevWeekNY's Zang challenge, and honorable mention in
 
 Check out the app in action below!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p9o9bdGKLNc" frameborder="0" allowfullscreen></iframe>
+[![ZAMHack video demo](https://img.youtube.com/vi/p9o9bdGKLNc/0.jpg)](https://www.youtube.com/watch?v=p9o9bdGKLNc)
